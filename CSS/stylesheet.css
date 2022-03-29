@@ -1,0 +1,72 @@
+body{
+  font-family: helvetica;/*Sets the font style of the body content*/
+  font-size:120%;
+  background-color: #FCF7F8;
+  display:flex;
+  flex-direction: column;
+}
+header {
+  text-align: center; /*centers all text in the header sectiop*/
+  padding: 10px; /*adds padding*/
+  margin-bottom: 5px;
+}
+.navlist{
+  list-style-type: none; /*Removes the bullet points*/
+  padding: 20px;
+}
+h2 {
+  background-color: #b7dcee; /*Changes background color of h2 elements*/
+  padding: 10px; /*adds padding to h2 elements*/
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-color: black;
+  margin-top: 0;
+  text-align: center; /*centers the h2 elements*/
+  font-size:150%/*increases font size*/
+} /*Adds a border around the h2 elements with a shade of blue background*/
+#heading {
+  background-color: #60a7e1; /*adds a background color to the heading section*/
+}
+footer {
+  background-color: #343330;/*Adds a background color to the footer*/
+  text-align: center; /*Centres the text*/
+  margin-top: 5px;
+}
+.icons {
+  border-radius: 25px; /*Adds a border around the icons in the footer*/
+  margin: 2rem;
+  height: 70px;
+  width: 70px;
+}
+#contact {
+  color: white;/*Changes word color to white*/
+  font-size: 150%; /*adjusts the font size*/
+  padding-top: 20px;
+}
+.headshot {
+  border-radius: 50%;
+  border: 3px solid #cdcdd7;
+} /*Adds a colored circle around the headshot of Neil*/
+.sidePanel {
+  background-color: #e0e9e8; /*Changes background color of menu section*/
+  border-style: solid; /*adds a border*/
+  border-color: black; /*makes border color black*/
+  border-width: 1px;
+  padding-right: 0%;
+
+}/*Adds a border with a background color for this class*/
+#menu{
+font-size: 200% ; /*Increases the font size*/
+text-align: center; /*align text to centre*/
+}
+.main{
+ display: flex; /*adds flex to main section*/
+ flex-direction: row; /*added flex direction*/
+ overflow: unset;
+}
+.content{
+margin-left: 30%; /*Shifts the content to the centre of the page*/
+font-size: large; /*increases the font size*/
+}
