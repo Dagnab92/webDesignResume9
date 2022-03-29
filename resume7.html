@@ -12,10 +12,11 @@
 
 <body>
     <header id="heading">
-        <aside>
-            <img class="headshot" src="images/Headshot.jpeg" alt="Neil Bruce Headshot" width="350" height="421">
-            <!--This is an image of Neil-->
-        </aside>
+        <picture>
+            <source media="(max-width: 480px)" srcset="images/profilePic-headshot.jpg">
+            <source media="(max-width: 850px)" srcset="images/profilePic-shoulders.jpg">
+            <img src="images/profilePic-full.jpg" alt="Neil Profile Picture">
+        </picture>
         <h1 style="color:#ffff" style="font-size:x-large">Neil Bruce</h1>
         <!--Change color and font size of h1 element-->
         <p style="color:#ffff">Im a quick learner, im flexibil which means that when a difficult situation occurs I am
