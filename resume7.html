@@ -4,43 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Digital Resume</title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <!--Links CSS sheet to html file-->
-    <style>
-.hero-image {
-  background-image: linear-gradient(rgba(50, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero_image.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-    </style>
 </head>
 
 <body>
     <header id="heading">
-        <div class="container">
-            <div class="hero-image"></div>
-            <div class="hero-text">
-                <h1 style="font-size:x-large">Neil Bruce</h1>
-                <!--Change color and font size of h1 element-->
-                <p>Im a quick learner, im flexibil which means that when a difficult situation occurs I am able to keep
-                    calm and
-                    focus on what is at hand in order to achieve a positive outcome.</p>
-                <p> <b>I have a strong passion for technology and that is why I started by own IT
-                        business</b>
-                    <!--Made this paragraph bold to stand out-->
-                </p>
-                <p> <b>CEO | Coder| Airsoft enthusiast </b>
-
-                </p>
-            </div>
+        <aside>
+            <img class="headshot" src="images/Headshot.jpg" alt="Neil Bruce Headshot" width="350" height="421">
             <!--This is an image of Neil-->
-        </div>
+        </aside>
+        <h1 style="color:#ffff" style="font-size:x-large">Neil Bruce</h1>
+        <!--Change color and font size of h1 element-->
+        <p style="color:#ffff">Im a quick learner, im flexibil which means that when a difficult situation occurs I am
+            able to keep calm and
+            focus on what is at hand in order to achieve a positive outcome.</p>
+        <p style="color:#ffff"> <b>I have a strong passion for technology and that is why I started by own IT
+                business</b>
+            <!--Made this paragraph bold to stand out-->
+        </p>
     </header>
     <main class="main">
         <div class="sidePanel">
@@ -57,19 +41,19 @@
         </div>
         <div class="content">
             <article>
-                <div>
-                    <h2 id="education">Education</h2>
-                    <!--Added id to Education h1-->
-                    <h3>Matric</h3>
-                    <p>Bergvliet High School (2005-2010)</p>
-                    <h3>Higher Certificate in Business Practice and Principles</h3>
-                    <p>Varsity College (2011)</p>
-                    <h3>Bcomm Strategic Management</h3>
-                    <p>Varisity College (2012-2014)</p>
-                    <h3>Into to Web at <a href="https://www.codespace.co.za" target="_blank">CodeSpace Acadamy</a></h3>
-                    <!--inline anchor that opens up new tab for codespace-->
-                    <p>CodeSpace Acadamy (2022-2022)</p>
-                </div>
+                <div class="container-1">
+                <h2 id="education">Education</h2>
+                <!--Added id to Education h1-->
+                <h3>Matric</h3>
+                <p>Bergvliet High School (2005-2010)</p>
+                <h3>Higher Certificate in Business Practice and Principles</h3>
+                <p>Varsity College (2011)</p>
+                <h3>Bcomm Strategic Management</h3>
+                <p>Varisity College (2012-2014)</p>
+                <h3>Into to Web at <a href="https://www.codespace.co.za" target="_blank">CodeSpace Acadamy</a></h3>
+                <!--inline anchor that opens up new tab for codespace-->
+                <p>CodeSpace Acadamy (2022-2022)</p>
+            </div>
                 <h2 id="experience">Experience</h2>
                 <!--Added id to Experience h2-->
                 <h3>Route 66</h3>
@@ -113,7 +97,7 @@
                 <!--Added different images for different viewports-->
             </picture>
         </div>
-
+        
 
     </main>
     <footer>
