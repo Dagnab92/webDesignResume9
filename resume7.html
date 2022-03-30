@@ -8,29 +8,39 @@
     <title>My Digital Resume</title>
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <!--Links CSS sheet to html file-->
+    <style>
+.hero-image {
+  background-image: linear-gradient(rgba(50, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero_image.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+    </style>
 </head>
 
 <body>
     <header id="heading">
-        <picture>
-            <source media="(max-width: 480px)" srcset="images/profilePic-headshot.jpg">
-            <source media="(max-width: 850px)" srcset="images/profilePic-shoulders.jpg">
-            <img src="images/profilePic-full.jpg" alt="Neil Profile Picture">
-            <!--Added different images for different viewports-->
-        </picture>
-        <aside>
-            <img class="headshot" src="images/Headshot.jpeg" alt="Neil Bruce Headshot" width="350" height="421">
+        <div class="container">
+            <div class="hero-image"></div>
+            <div class="hero-text">
+                <h1 style="font-size:x-large">Neil Bruce</h1>
+                <!--Change color and font size of h1 element-->
+                <p>Im a quick learner, im flexibil which means that when a difficult situation occurs I am able to keep
+                    calm and
+                    focus on what is at hand in order to achieve a positive outcome.</p>
+                <p> <b>I have a strong passion for technology and that is why I started by own IT
+                        business</b>
+                    <!--Made this paragraph bold to stand out-->
+                </p>
+                <p> <b>CEO | Coder| Airsoft enthusiast </b>
+
+                </p>
+            </div>
             <!--This is an image of Neil-->
-        </aside>
-        <h1 style="color:#ffff" style="font-size:x-large">Neil Bruce</h1>
-        <!--Change color and font size of h1 element-->
-        <p style="color:#ffff">Im a quick learner, im flexibil which means that when a difficult situation occurs I am
-            able to keep calm and
-            focus on what is at hand in order to achieve a positive outcome.</p>
-        <p style="color:#ffff"> <b>I have a strong passion for technology and that is why I started by own IT
-                business</b>
-            <!--Made this paragraph bold to stand out-->
-        </p>
+        </div>
     </header>
     <main class="main">
         <div class="sidePanel">
@@ -47,17 +57,19 @@
         </div>
         <div class="content">
             <article>
-                <h2 id="education">Education</h2>
-                <!--Added id to Education h1-->
-                <h3>Matric</h3>
-                <p>Bergvliet High School (2005-2010)</p>
-                <h3>Higher Certificate in Business Practice and Principles</h3>
-                <p>Varsity College (2011)</p>
-                <h3>Bcomm Strategic Management</h3>
-                <p>Varisity College (2012-2014)</p>
-                <h3>Into to Web at <a href="https://www.codespace.co.za" target="_blank">CodeSpace Acadamy</a></h3>
-                <!--inline anchor that opens up new tab for codespace-->
-                <p>CodeSpace Acadamy (2022-2022)</p>
+                <div>
+                    <h2 id="education">Education</h2>
+                    <!--Added id to Education h1-->
+                    <h3>Matric</h3>
+                    <p>Bergvliet High School (2005-2010)</p>
+                    <h3>Higher Certificate in Business Practice and Principles</h3>
+                    <p>Varsity College (2011)</p>
+                    <h3>Bcomm Strategic Management</h3>
+                    <p>Varisity College (2012-2014)</p>
+                    <h3>Into to Web at <a href="https://www.codespace.co.za" target="_blank">CodeSpace Acadamy</a></h3>
+                    <!--inline anchor that opens up new tab for codespace-->
+                    <p>CodeSpace Acadamy (2022-2022)</p>
+                </div>
                 <h2 id="experience">Experience</h2>
                 <!--Added id to Experience h2-->
                 <h3>Route 66</h3>
@@ -94,7 +106,14 @@
                     <li>Sales</li>
                 </ul>
             </article>
+            <picture>
+                <source media="(max-width: 480px)" srcset="images/Neil_small.png">
+                <source media="(max-width: 850px)" srcset="images/Neil_medium.jpg">
+                <img src="images/Neil_large.jpg" alt="Neil Profile Picture" width="auto" height="450px">
+                <!--Added different images for different viewports-->
+            </picture>
         </div>
+
 
     </main>
     <footer>

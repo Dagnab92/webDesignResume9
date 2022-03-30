@@ -7,7 +7,7 @@ body{
 }
 header {
   text-align: center; /*centers all text in the header section*/
-  padding: 10px; /*adds padding*/
+  padding: 0px; /*adds padding*/
   margin-bottom: 5px;
 }
 .navlist{
@@ -45,10 +45,7 @@ footer {
   font-size: 150%; /*adjusts the font size*/
   padding-top: 20px;
 }
-.headshot {
-  border-radius: 100%;
-  border: 3px solid #cdcdd7;
-} /*Adds a colored circle around the headshot of Neil*/
+
 .sidePanel {
   background-color: #e0e9e8; /*Changes background color of menu section*/
   border-style: solid; /*adds a border*/
@@ -71,8 +68,21 @@ margin-left: 30%; /*Shifts the content to the centre of the page*/
 font-size: large; /*increases the font size*/
 }
 .hero-image{
-
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .hero-text{
+  text-align:left;
+        position: absolute;
+        font-size: 18px;
+        top: 50px;
+        left: 2%;
+        color: white;
+}
+article{
+  background-image: url('NEIL4.jpg');
 
 }
