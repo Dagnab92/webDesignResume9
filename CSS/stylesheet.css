@@ -4,14 +4,12 @@ body{
   background-color: #FCF7F8;
   display:flex;
   flex-direction: column;
-  background-image: url('images/Headshot.jpg');
   
 }
 header {
   text-align: center; /*centers all text in the header section*/
   padding: 10px; /*adds padding*/
   margin-bottom: 5px;
-  background-image: url('images/Headshot.jpg');
 }
 .navlist{
   list-style-type: none; /*Removes the bullet points*/
@@ -70,9 +68,6 @@ text-align: center; /*align text to centre*/
  overflow: unset;
 }
 .content{
-margin-left: 30%; /*Shifts the content to the centre of the page*/
+margin-left: 25%; /*Shifts the content to the centre of the page*/
 font-size: large; /*increases the font size*/
-}
-.container-1{
-  background-image: url('images/Headshot.jpg');
 }
