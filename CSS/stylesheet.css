@@ -6,7 +6,7 @@ body{
   flex-direction: column;
 }
 header {
-  text-align: center; /*centers all text in the header sectiop*/
+  text-align: center; /*centers all text in the header section*/
   padding: 10px; /*adds padding*/
   margin-bottom: 5px;
 }
@@ -46,7 +46,7 @@ footer {
   padding-top: 20px;
 }
 .headshot {
-  border-radius: 50%;
+  border-radius: 100%;
   border: 3px solid #cdcdd7;
 } /*Adds a colored circle around the headshot of Neil*/
 .sidePanel {
@@ -69,4 +69,10 @@ text-align: center; /*align text to centre*/
 .content{
 margin-left: 30%; /*Shifts the content to the centre of the page*/
 font-size: large; /*increases the font size*/
+}
+.hero-image{
+
+}
+.hero-text{
+
 }
