@@ -1,20 +1,47 @@
 body{
-  font-family: helvetica;/*Sets the font style of the body content*/
+  font-family: Arial, Helvetica, sans-serif;/*Sets the font style of the body content*/
   font-size:120%;
   background-color: #FCF7F8;
   display:flex;
   flex-direction: column;
   
 }
+.main{
+  display: flex; /*adds flex to main section*/
+  flex-direction: row; /*added flex direction*/
+  overflow: unset;
+ }
+ .content{
+  margin-left: 25%; /*Shifts the content to the centre of the page*/
+  font-size: large; /*increases the font size*/
+  }
 header {
   text-align: center; /*centers all text in the header section*/
   padding: 10px; /*adds padding*/
   margin-bottom: 5px;
 }
+.headshot {
+  border-radius: 100%;
+  border: 3px solid #cdcdd7;
+} /*Adds a colored circle around the headshot of Neil*/
+
 .navlist{
   list-style-type: none; /*Removes the bullet points*/
   padding: 20px;
 }
+.sidePanel {
+  background-color: #e0e9e8; /*Changes background color of menu section*/
+  border-style: solid; /*adds a border*/
+  border-color: black; /*makes border color black*/
+  border-width: 1px;
+  padding-right: 0%;
+
+}/*Adds a border with a background color for this class*/
+#menu{
+font-size: 200% ; /*Increases the font size*/
+text-align: center; /*align text to centre*/
+}
+
 h2 {
   background-color: #b7dcee; /*Changes background color of h2 elements*/
   padding: 10px; /*adds padding to h2 elements*/
@@ -46,28 +73,23 @@ footer {
   font-size: 150%; /*adjusts the font size*/
   padding-top: 20px;
 }
-.headshot {
-  border-radius: 100%;
-  border: 3px solid #cdcdd7;
-} /*Adds a colored circle around the headshot of Neil*/
-.sidePanel {
-  background-color: #e0e9e8; /*Changes background color of menu section*/
-  border-style: solid; /*adds a border*/
-  border-color: black; /*makes border color black*/
-  border-width: 1px;
-  padding-right: 0%;
-
-}/*Adds a border with a background color for this class*/
-#menu{
-font-size: 200% ; /*Increases the font size*/
-text-align: center; /*align text to centre*/
+/*small devices (small phones, 300px and up)*/
+@media only screen and (min-width: 300px){
+  .content{
+    margin-left: 0%;
+  }
 }
-.main{
- display: flex; /*adds flex to main section*/
- flex-direction: row; /*added flex direction*/
- overflow: unset;
+/*small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px){
+  .content{
+    margin-left: 0%;
+    padding-left: 0.5%;
+  }
 }
-.content{
-margin-left: 25%; /*Shifts the content to the centre of the page*/
-font-size: large; /*increases the font size*/
+/*Large devices (Laptops and desktops, 1440px and up)*/
+@media only screen and (min-width: 1440px){
+  .content{
+    margin-left: 0%;
+    padding-left: 2%;
+  }
 }
