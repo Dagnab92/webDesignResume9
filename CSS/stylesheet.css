@@ -1,134 +1,73 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  /*Sets the font style of the body content*/
-  font-size: 120%;
+body{
+  font-family: helvetica;/*Sets the font style of the body content*/
+  font-size:120%;
   background-color: #FCF7F8;
-  display: flex;
+  display:flex;
   flex-direction: column;
+  
 }
-
-.main {
-  display: flex;
-  /*adds flex to main section*/
-  flex-direction: row;
-  /*added flex direction*/
-  overflow: unset;
-}
-
 header {
-  text-align: center;
-  /*centers all text in the header section*/
-  padding: 10px;
-  /*adds padding*/
+  text-align: center; /*centers all text in the header section*/
+  padding: 10px; /*adds padding*/
   margin-bottom: 5px;
 }
-
-.navlist {
-  list-style-type: none;
-  /*Removes the bullet points*/
+.navlist{
+  list-style-type: none; /*Removes the bullet points*/
   padding: 20px;
 }
-
-.sidePanel {
-  background-color: #1c606a;
-  /*Changes background color of menu section*/
-  border-style: solid;
-  /*adds a border*/
-  border-color: #18454b;
-  /*makes border color black*/
-  border-width: 2px;
-  padding-right: 0%;
-  overflow: hidden;
-  /*Hides overflow*/
-  text-align: center;
-}
-.sidePanel a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.sidePanel a:hover {
-  background-color: #ddd;
-  color: black;
-  /*Adds color when corsor hovers over text in nav*/
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  overflow: auto;
-}
-
 h2 {
-  background-color: #b7dcee;
-  /*Changes background color of h2 elements*/
-  padding: 10px;
-  /*adds padding to h2 elements*/
+  background-color: #b7dcee; /*Changes background color of h2 elements*/
+  padding: 10px; /*adds padding to h2 elements*/
   border-style: solid;
   border-width: 1px;
   border-left-width: 1px;
   border-right-width: 1px;
   border-color: black;
   margin-top: 0;
-  text-align: center;
-  /*centers the h2 elements*/
-  font-size: 150%
-    /*increases font size*/
-    /*Adds a border around the h2 elements with a shade of blue background*/
-}
-
-
+  text-align: center; /*centers the h2 elements*/
+  font-size:150%/*increases font size*/
+} /*Adds a border around the h2 elements with a shade of blue background*/
 #heading {
-  background-color: #60a7e1;
-  /*adds a background color to the heading section*/
+  background-color: #60a7e1; /*adds a background color to the heading section*/
 }
-
-.headshot {
-  border-radius: 100%;
-  border: 3px solid #cdcdd7;
-  /*Adds a colored circle around the headshot of Neil*/
-  /*Adds a border with a background color for this class*/
-}
-
-.content {
-  margin-left: 25%;
-  /*Shifts the content to the centre of the page*/
-}
-
 footer {
-  background-color: #343330;
-  /*Adds a background color to the footer*/
-  text-align: center;
-  /*Centres the text*/
+  background-color: #343330;/*Adds a background color to the footer*/
+  text-align: center; /*Centres the text*/
   margin-top: 5px;
 }
-
 .icons {
-  border-radius: 25px;
-  /*Adds a border around the icons in the footer*/
+  border-radius: 25px; /*Adds a border around the icons in the footer*/
   margin: 2rem;
   height: 70px;
   width: 70px;
 }
-
 #contact {
-  color: white;
-  /*Changes word color to white*/
-  font-size: 150%;
-  /*adjusts the font size*/
+  color: white;/*Changes word color to white*/
+  font-size: 150%; /*adjusts the font size*/
   padding-top: 20px;
 }
-@media only screen and (max-width: 480px) {
-h2{
-  font-size: 6vw;
-}
-h3{
-  font-size: 5vw;
-}
+.headshot {
+  border-radius: 100%;
+  border: 3px solid #cdcdd7;
+} /*Adds a colored circle around the headshot of Neil*/
+.sidePanel {
+  background-color: #e0e9e8; /*Changes background color of menu section*/
+  border-style: solid; /*adds a border*/
+  border-color: black; /*makes border color black*/
+  border-width: 1px;
+  padding-right: 0%;
 
+}/*Adds a border with a background color for this class*/
+#menu{
+font-size: 200% ; /*Increases the font size*/
+text-align: center; /*align text to centre*/
 }
-@media only screen and (max-width: 850px) {
-
+.main{
+ display: flex; /*adds flex to main section*/
+ flex-direction: row; /*added flex direction*/
+ overflow: unset;
+}
+.content{
+margin-left: 25%; /*Shifts the content to the centre of the page*/
+font-size: large; /*increases the font size*/
 }
