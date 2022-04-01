@@ -2,45 +2,20 @@ body{
   font-family: Arial, Helvetica, sans-serif;/*Sets the font style of the body content*/
   font-size:120%;
   background-color: #FCF7F8;
-  display:flex;
-  flex-direction: column;
-  
+ 
 }
-.main{
-  display: flex; /*adds flex to main section*/
-  flex-direction: row; /*added flex direction*/
-  overflow: unset;
+.selector-for-some-widget {
+  box-sizing: content-box;
  }
- .content{
-  margin-left: 25%; /*Shifts the content to the centre of the page*/
-  font-size: large; /*increases the font size*/
-  }
 header {
   text-align: center; /*centers all text in the header section*/
   padding: 10px; /*adds padding*/
   margin-bottom: 5px;
 }
-.headshot {
+#headshot {
   border-radius: 100%;
   border: 3px solid #cdcdd7;
 } /*Adds a colored circle around the headshot of Neil*/
-
-.navlist{
-  list-style-type: none; /*Removes the bullet points*/
-  padding: 20px;
-}
-.sidePanel {
-  background-color: #e0e9e8; /*Changes background color of menu section*/
-  border-style: solid; /*adds a border*/
-  border-color: black; /*makes border color black*/
-  border-width: 1px;
-  padding-right: 0%;
-
-}/*Adds a border with a background color for this class*/
-#menu{
-font-size: 200% ; /*Increases the font size*/
-text-align: center; /*align text to centre*/
-}
 
 h2 {
   background-color: #b7dcee; /*Changes background color of h2 elements*/
@@ -62,11 +37,9 @@ footer {
   text-align: center; /*Centres the text*/
   margin-top: 5px;
 }
-.icons {
-  border-radius: 25px; /*Adds a border around the icons in the footer*/
+#icons {
   margin: 2rem;
-  height: 70px;
-  width: 70px;
+  padding: 20px
 }
 #contact {
   color: white;/*Changes word color to white*/
@@ -78,6 +51,9 @@ footer {
   .content{
     margin-left: 0%;
   }
+  body{
+    font-size: 4vw;
+  }
 }
 /*small devices (portrait tablets and large phones, 600px and up)*/
 @media only screen and (min-width: 600px){
@@ -85,11 +61,17 @@ footer {
     margin-left: 0%;
     padding-left: 0.5%;
   }
+  body{
+    font-size: 3vw;
+  }
 }
 /*Large devices (Laptops and desktops, 1440px and up)*/
 @media only screen and (min-width: 1440px){
   .content{
     margin-left: 0%;
-    padding-left: 2%;
+    padding-left: 0.5%;
+  }
+  body{
+    font-size: 2vw;
   }
 }

@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Digital Resume</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Links CSS sheet to html file-->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!--Adds background image to heading ID-->
     <style>
-        #heading{
-        background-image:linear-gradient(rgba(45, 202, 223, 0.473), rgba(56, 166, 180, 0.151)), url('images/other.jpg');
-        background-color:#53a0e4;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        #heading {
+            background-image: linear-gradient(rgba(45, 202, 223, 0.473), rgba(56, 166, 180, 0.151)), url('images/background.jpg');
+            background-color: #53a0e4;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
 
         }
     </style>
@@ -22,11 +26,36 @@
 
 <body>
     <header id="heading">
-        <aside>
-            <img class="headshot" src="images/Headshot.jpg" alt="Neil Bruce Headshot" width="350" height="421">
-            <!--This is an image of Neil-->
-        </aside>
-        <h1 style="color:#ffff" style="font-size:x-large">Neil Bruce</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="background-image">
+            <img id="headshot" class="img-fluid" src="images/Headshot.jpg" alt="Neil Bruce Headshot">
+        </div>
+        <h1 class="display-1" style="color:#ffff">Neil Bruce</h1>
         <!--Change color and font size of h1 element-->
         <p style="color:#ffff">Im a quick learner, im flexibil which means that when a difficult situation occurs I am
             able to keep calm and
@@ -37,95 +66,128 @@
         </p>
     </header>
     <main class="main">
-        <div class="sidePanel">
-            <nav>
-                <h4 id="menu">Menu</h4>
-                <ul class="navlist">
-                    <!--Below is code for interal links with a color style black-->
-                    <li><a href="#education" style="color:black">Education</a></li>
-                    <li><a href="#experience" style="color:black">Experience</a></li>
-                    <li><a href="#skills" style="color:black">Skills</a></li>
-                    <li><a href="#contact" style="color:black">Contact details</a></li>
-                </ul>
-            </nav>
-        </div>
         <div class="content">
-            <article>
-                <h2 id="education">Education</h2>
-                <!--Added id to Education h1-->
-                <h3>Matric</h3>
-                <p>Bergvliet High School (2005-2010)</p>
-                <h3>Higher Certificate in Business Practice and Principles</h3>
-                <p>Varsity College (2011)</p>
-                <h3>Bcomm Strategic Management</h3>
-                <p>Varisity College (2012-2014)</p>
-                <h3>Into to Web at <a href="https://www.codespace.co.za" target="_blank">CodeSpace Acadamy</a></h3>
-                <!--inline anchor that opens up new tab for codespace-->
-                <p>CodeSpace Acadamy (2022-2022)</p>
-                <h2 id="experience">Experience</h2>
-                <!--Added id to Experience h2-->
-                <h3>Route 66</h3>
-                <p>General Manager (2015-2016)</p>
-                <p>Duties:</p>
-                <ul>
-                    <li>Marketing</li>
-                    <li>Procurment</li>
-                    <li>Daily Cashup</li>
-                </ul>
-                <h3>AllScale (2016-2022)</h3>
-                <p>General Manager</p>
-                <p>Duties:</p>
-                <ul>
-                    <li>Marketing</li>
-                    <li>Sales</li>
-                    <li>Stock Procurment</li>
-                    <li>Import</li>
-                    <li>Technical repairs</li>
-                    <li>Stock Pricing</li>
-                    <li>Customer Relationship Management</li>
-                    <li>Team Leader</li>
-                    <li>Office management</li>
-                </ul>
-                <h2 id="skills">Skills</h2>
-                <!--Added id to skills-->
-                <ul>
-                    <li>Flexibility</li>
-                    <li>Technical</li>
-                    <li>MS Office</li>
-                    <li>Information Technology</li>
-                    <li>Team Leading</li>
-                    <li>Communication</li>
-                    <li>Sales</li>
-                </ul>
-            </article>
-            <picture>
-                <source media="(max-width: 480px)" srcset="images/Neil_small.png">
-                <source media="(max-width: 850px)" srcset="images/Neil_medium.jpg">
-                <img src="images/Neil_large.jpg" alt="Neil Profile Picture" style="max-width:100%;height:auto">
-                <!--Added different images for different viewports-->
-            </picture>
-        </div>
-        
+            <div class="container-fluid">
+                <div class="row">
+                    <article class="col pt-sm-2 order-2">
+                        <h2 class="display-5" id="education">Education</h2>
+                        <!--Added id to Education h1-->
+                        <h3>Matric</h3>
+                        <p>Bergvliet High School (2005-2010)</p>
+                        <h3>Higher Certificate in Business Practice and Principles</h3>
+                        <p>Varsity College (2011)</p>
+                        <h3>Bcomm Strategic Management</h3>
+                        <p>Varisity College (2012-2014)</p>
+                        <h3>Into to Web at <a href="https://www.codespace.co.za" target="_blank">CodeSpace Acadamy</a>
+                        </h3>
+                        <!--inline anchor that opens up new tab for codespace-->
+                        <p>CodeSpace Acadamy (2022-2022)</p>
+                        <h2 class="display-5" id="experience">Experience</h2>
+                        <!--Added id to Experience h2-->
+                        <h3 class="display-6">Route 66</h3>
+                        <p>General Manager (2015-2016)</p>
+                        <p>Duties:</p>
+                        <ul>
+                            <li>Marketing</li>
+                            <li>Procurment</li>
+                            <li>Daily Cashup</li>
+                        </ul>
+                        <h3 class="display-6">AllScale (2016-2022)</h3>
+                        <p>General Manager</p>
+                        <p>Duties:</p>
+                        <ul>
+                            <li>Marketing</li>
+                            <li>Sales</li>
+                            <li>Stock Procurment</li>
+                            <li>Import</li>
+                            <li>Technical repairs</li>
+                            <li>Stock Pricing</li>
+                            <li>Customer Relationship Management</li>
+                            <li>Team Leader</li>
+                            <li>Office management</li>
+                        </ul>
+                        <div class="col-sm order-3">
+                            <h2 class="display-5" id="skills">Skills</h2>
 
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <div class="d-flex justify-content-center">
+                                        <img src="images/HTML.png" class="d-block w-100" alt="html" style="max-width: 80px;height:80px">
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <div class="d-flex justify-content-center">
+                                        <img src="images/CSS.png" class="d-block w-100" alt="CSS" style="max-width: 80px;height:80px">
+                                    </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-flex justify-content-center">
+                                        <img src="images/display.png" class="d-block w-100"
+                                            alt="Information Technology" style="max-width: 80px;height:80px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <aside class="col pt-sm-2 order-1">
+                        <picture>
+                            <source media="(max-width: 480px)" srcset="images/Neil_small.png">
+                            <source media="(max-width: 850px)" srcset="images/Neil_medium.jpg">
+                            <img src="images/Neil_large.jpg" alt="Neil Profile Picture" class="img-fluid">
+                            <!--Added different images for different viewports-->
+                        </picture>
+                        <!--This is an image of Neil-->
+                        <h2>Some details about me</h2>
+                        <p>Age: 29</p>
+                        <p>Sex: Male</p>
+                        <p>Location: Cape Town</p>
+                    </aside>
+                </div>
+            </div>
     </main>
     <footer>
         <h3 id="contact">Contact Details</h3>
         <ul>
             <!--Below is reference tags and social media icons with respective alts-->
             <a href="http://www.linkedin.com/" target="_blank">
-                <img class="icons" src="images/Linkedin_icon.jpeg" alt="Neil Bruce Linkedin profile">
+                <img id="icons" class="img-fluid" src="images/Linkedin_icon.jpeg" alt="Neil Bruce Linkedin profile">
             </a>
             <a href="https://www.facebook.com/neil.bruce.3781" target="_blank">
-                <img class="icons" src="images/Facebook_icon.jpeg" alt="Neil Bruce Facebook profile">
+                <img id="icons" class="img-fluid" src="images/Facebook_icon.jpeg" alt="Neil Bruce Facebook profile">
             </a>
             <a href="https://www.instagram.com" target="_blank">
-                <img class="icons" src="images/Instagram_icon.jpeg" alt="Neil Bruce Instagram">
+                <img id="icons" class="img-fluid" src="images/Instagram_icon.jpeg" alt="Neil Bruce Instagram">
             </a>
             <a href="https://www.WhatsApp.com" target="_blank">
-                <img class="icons" src="images/WhatsApp_icon.jpeg" alt="Neil Bruce Whatsapp">
+                <img id="icons" class="img-fluid" src="images/WhatsApp_icon.jpeg" alt="Neil Bruce Whatsapp">
             </a>
         </ul>
     </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
