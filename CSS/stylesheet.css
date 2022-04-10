@@ -18,13 +18,8 @@ header {
 } /*Adds a colored circle around the headshot of Neil*/
 
 h2 {
-  background-color: #b7dcee; /*Changes background color of h2 elements*/
+  
   padding: 10px; /*adds padding to h2 elements*/
-  border-style: solid;
-  border-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-color: black;
   margin-top: 0;
   text-align: center; /*centers the h2 elements*/
   font-size:150%/*increases font size*/
@@ -46,24 +41,50 @@ footer {
   font-size: 150%; /*adjusts the font size*/
   padding-top: 20px;
 }
+.bbg{
+  background-color: #4b95c4e5;
+}
+.hero-text{
+    text-align: center;
+    
+    color: white;
+  }
+  .card{
+    margin-bottom: 2vw; ;
+ }
+ .ec{
+     margin-left: 50px;
+     }
+ 
+     
 /*small devices (small phones, 300px and up)*/
 @media only screen and (min-width: 300px){
   .content{
-    margin-left: 0%;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
   body{
     font-size: 4vw;
   }
+  .ec{
+    margin-left: 25px;
+    }
+#exp{
+  margin-left: 2vw;
+}
 }
 /*small devices (portrait tablets and large phones, 600px and up)*/
 @media only screen and (min-width: 600px){
   .content{
-    margin-left: 0%;
+    margin-left: 0vw;
     padding-left: 0.5%;
   }
   body{
     font-size: 3vw;
   }
+  .ec{
+    margin-left: 20px;
+    }
 }
 /*Large devices (Laptops and desktops, 1440px and up)*/
 @media only screen and (min-width: 1440px){
